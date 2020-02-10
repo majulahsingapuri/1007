@@ -10,6 +10,7 @@
 		4C1F2F2C23EBAF1B000FC6E3 /* locateFirstChar.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F2F2B23EBAF1B000FC6E3 /* locateFirstChar.c */; };
 		4C4AE82A23EA588100F5834E /* insertChar.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C4AE82923EA588100F5834E /* insertChar.c */; };
 		4C65DF2723EE962900BAD239 /* countWords.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C65DF2623EE962900BAD239 /* countWords.c */; };
+		4C808B4623F116FC00A8866C /* cipherText.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C808B4523F116FC00A8866C /* cipherText.c */; };
 		4CD6492123EBE0440031FAA2 /* longWordLength.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6492023EBE0440031FAA2 /* longWordLength.c */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		4C808B4123F116FC00A8866C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		4CD6491C23EBE0440031FAA2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,6 +69,8 @@
 		4C4AE82923EA588100F5834E /* insertChar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = insertChar.c; sourceTree = "<group>"; };
 		4C65DF2423EE962900BAD239 /* countWords */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = countWords; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C65DF2623EE962900BAD239 /* countWords.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = countWords.c; sourceTree = "<group>"; };
+		4C808B4323F116FC00A8866C /* cipherText */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cipherText; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C808B4523F116FC00A8866C /* cipherText.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cipherText.c; sourceTree = "<group>"; };
 		4CD6491E23EBE0440031FAA2 /* longWordLength */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = longWordLength; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD6492023EBE0440031FAA2 /* longWordLength.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = longWordLength.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +91,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4C65DF2123EE962900BAD239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C808B4023F116FC00A8866C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -110,6 +129,7 @@
 				4C1F2F2A23EBAF1B000FC6E3 /* locateFirstChar */,
 				4CD6491F23EBE0440031FAA2 /* longWordLength */,
 				4C65DF2523EE962900BAD239 /* countWords */,
+				4C808B4423F116FC00A8866C /* cipherText */,
 				4C4AE82723EA588100F5834E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +141,7 @@
 				4C1F2F2923EBAF1B000FC6E3 /* locateFirstChar */,
 				4CD6491E23EBE0440031FAA2 /* longWordLength */,
 				4C65DF2423EE962900BAD239 /* countWords */,
+				4C808B4323F116FC00A8866C /* cipherText */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +160,14 @@
 				4C65DF2623EE962900BAD239 /* countWords.c */,
 			);
 			path = countWords;
+			sourceTree = "<group>";
+		};
+		4C808B4423F116FC00A8866C /* cipherText */ = {
+			isa = PBXGroup;
+			children = (
+				4C808B4523F116FC00A8866C /* cipherText.c */,
+			);
+			path = cipherText;
 			sourceTree = "<group>";
 		};
 		4CD6491F23EBE0440031FAA2 /* longWordLength */ = {
@@ -203,6 +232,23 @@
 			productReference = 4C65DF2423EE962900BAD239 /* countWords */;
 			productType = "com.apple.product-type.tool";
 		};
+		4C808B4223F116FC00A8866C /* cipherText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C808B4923F116FC00A8866C /* Build configuration list for PBXNativeTarget "cipherText" */;
+			buildPhases = (
+				4C808B3F23F116FC00A8866C /* Sources */,
+				4C808B4023F116FC00A8866C /* Frameworks */,
+				4C808B4123F116FC00A8866C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cipherText;
+			productName = cipherText;
+			productReference = 4C808B4323F116FC00A8866C /* cipherText */;
+			productType = "com.apple.product-type.tool";
+		};
 		4CD6491D23EBE0440031FAA2 /* longWordLength */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CD6492423EBE0440031FAA2 /* Build configuration list for PBXNativeTarget "longWordLength" */;
@@ -238,6 +284,9 @@
 					4C65DF2323EE962900BAD239 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					4C808B4223F116FC00A8866C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					4CD6491D23EBE0440031FAA2 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -260,6 +309,7 @@
 				4C1F2F2823EBAF1B000FC6E3 /* locateFirstChar */,
 				4CD6491D23EBE0440031FAA2 /* longWordLength */,
 				4C65DF2323EE962900BAD239 /* countWords */,
+				4C808B4223F116FC00A8866C /* cipherText */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +336,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C65DF2723EE962900BAD239 /* countWords.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C808B3F23F116FC00A8866C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C808B4623F116FC00A8866C /* cipherText.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +527,26 @@
 			};
 			name = Release;
 		};
+		4C808B4723F116FC00A8866C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6F9359RN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C808B4823F116FC00A8866C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6F9359RN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		4CD6492223EBE0440031FAA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -524,6 +602,15 @@
 			buildConfigurations = (
 				4C65DF2823EE962900BAD239 /* Debug */,
 				4C65DF2923EE962900BAD239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C808B4923F116FC00A8866C /* Build configuration list for PBXNativeTarget "cipherText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C808B4723F116FC00A8866C /* Debug */,
+				4C808B4823F116FC00A8866C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
