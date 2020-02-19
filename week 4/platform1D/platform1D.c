@@ -34,6 +34,9 @@ int platform1D(int ar[], int size) {
     for (int i = 0; i < size - 1; i++) {
         if (ar[i] == ar[i+1]) {
             length++;
+            if (length > lengthFinal) {
+                lengthFinal = length;
+            }
         } else {
             if (length > lengthFinal) {
                 lengthFinal = length;
