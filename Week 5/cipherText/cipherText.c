@@ -78,3 +78,47 @@ void decipher(char *s) {
         }
     }
 }
+/*
+void cipher(char *s)
+{
+    int index = 0;
+
+    while (s[index] != '\0'){
+        if (isalpha(s[index])){
+            switch (s[index]){
+            case 'z':
+                s[index] = 'a';
+                break;
+            case 'Z':
+                s[index] = 'A';
+                break;
+            default:
+                s[index]++;
+                break;
+            }
+        }
+        index++;
+    }
+}
+void decipher(char *s)
+{
+    int index = 0;
+
+    while (s[index] != '\0'){
+        if (isalpha(s[index])){
+            switch (s[index]){
+            case 'a':
+                s[index] = 'z';
+                break;
+            case 'A':
+                s[index] = 'Z';
+                break;
+            default:
+                s[index]--;
+                break;
+            }
+        }
+        index++;
+    }
+}
+*/
