@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C2B9AE72405689C005E4F95 /* rLookupAr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B9AE62405689C005E4F95 /* rLookupAr.c */; };
+		4C2B9AF224056BAA005E4F95 /* rReverseAr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B9AF124056BAA005E4F95 /* rReverseAr.c */; };
 		4C875E3B24051C55001171F1 /* rCountEvenDigits.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C875E3A24051C55001171F1 /* rCountEvenDigits.c */; };
 		4C875E4624051EF7001171F1 /* rFindMaxAr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C875E4524051EF7001171F1 /* rFindMaxAr.c */; };
 		4CB0097B2404C249007C807A /* rAge.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CB0097A2404C249007C807A /* rAge.c */; };
@@ -21,6 +22,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4C2B9AE22405689C005E4F95 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4C2B9AED24056BAA005E4F95 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -115,6 +125,8 @@
 /* Begin PBXFileReference section */
 		4C2B9AE42405689C005E4F95 /* rLookupAr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rLookupAr; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2B9AE62405689C005E4F95 /* rLookupAr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rLookupAr.c; sourceTree = "<group>"; };
+		4C2B9AEF24056BAA005E4F95 /* rReverseAr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rReverseAr; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2B9AF124056BAA005E4F95 /* rReverseAr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rReverseAr.c; sourceTree = "<group>"; };
 		4C875E3824051C55001171F1 /* rCountEvenDigits */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rCountEvenDigits; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C875E3A24051C55001171F1 /* rCountEvenDigits.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rCountEvenDigits.c; sourceTree = "<group>"; };
 		4C875E4324051EF7001171F1 /* rFindMaxAr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rFindMaxAr; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +149,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		4C2B9AE12405689C005E4F95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C2B9AEC24056BAA005E4F95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +236,14 @@
 			path = rLookupAr;
 			sourceTree = "<group>";
 		};
+		4C2B9AF024056BAA005E4F95 /* rReverseAr */ = {
+			isa = PBXGroup;
+			children = (
+				4C2B9AF124056BAA005E4F95 /* rReverseAr.c */,
+			);
+			path = rReverseAr;
+			sourceTree = "<group>";
+		};
 		4C875E3924051C55001171F1 /* rCountEvenDigits */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +273,7 @@
 				4CE9DD2D2405162400A45AA9 /* rStrcmp */,
 				4C875E4424051EF7001171F1 /* rFindMaxAr */,
 				4C2B9AE52405689C005E4F95 /* rLookupAr */,
+				4C2B9AF024056BAA005E4F95 /* rReverseAr */,
 				4CB009782404C249007C807A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -263,6 +291,7 @@
 				4C875E3824051C55001171F1 /* rCountEvenDigits */,
 				4C875E4324051EF7001171F1 /* rFindMaxAr */,
 				4C2B9AE42405689C005E4F95 /* rLookupAr */,
+				4C2B9AEF24056BAA005E4F95 /* rReverseAr */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,6 +370,23 @@
 			name = rLookupAr;
 			productName = rLookupAr;
 			productReference = 4C2B9AE42405689C005E4F95 /* rLookupAr */;
+			productType = "com.apple.product-type.tool";
+		};
+		4C2B9AEE24056BAA005E4F95 /* rReverseAr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C2B9AF324056BAA005E4F95 /* Build configuration list for PBXNativeTarget "rReverseAr" */;
+			buildPhases = (
+				4C2B9AEB24056BAA005E4F95 /* Sources */,
+				4C2B9AEC24056BAA005E4F95 /* Frameworks */,
+				4C2B9AED24056BAA005E4F95 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rReverseAr;
+			productName = rReverseAr;
+			productReference = 4C2B9AEF24056BAA005E4F95 /* rReverseAr */;
 			productType = "com.apple.product-type.tool";
 		};
 		4C875E3724051C55001171F1 /* rCountEvenDigits */ = {
@@ -508,6 +554,9 @@
 					4C2B9AE32405689C005E4F95 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					4C2B9AEE24056BAA005E4F95 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					4C875E3724051C55001171F1 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -560,6 +609,7 @@
 				4C875E3724051C55001171F1 /* rCountEvenDigits */,
 				4C875E4224051EF7001171F1 /* rFindMaxAr */,
 				4C2B9AE32405689C005E4F95 /* rLookupAr */,
+				4C2B9AEE24056BAA005E4F95 /* rReverseAr */,
 			);
 		};
 /* End PBXProject section */
@@ -570,6 +620,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2B9AE72405689C005E4F95 /* rLookupAr.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C2B9AEB24056BAA005E4F95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2B9AF224056BAA005E4F95 /* rReverseAr.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,6 +717,26 @@
 			name = Debug;
 		};
 		4C2B9AE92405689C005E4F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6F9359RN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4C2B9AF424056BAA005E4F95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6F9359RN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C2B9AF524056BAA005E4F95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -965,6 +1043,15 @@
 			buildConfigurations = (
 				4C2B9AE82405689C005E4F95 /* Debug */,
 				4C2B9AE92405689C005E4F95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C2B9AF324056BAA005E4F95 /* Build configuration list for PBXNativeTarget "rReverseAr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C2B9AF424056BAA005E4F95 /* Debug */,
+				4C2B9AF524056BAA005E4F95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
