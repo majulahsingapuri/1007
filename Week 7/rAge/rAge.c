@@ -1,6 +1,6 @@
 //
-//  rAge.c
-//  Week 7
+//  main.c
+//  rAge
 //
 //  Created by Bhargav Singapuri on 25/2/20.
 //  Copyright © 2020 Bhargav Singapuri. All rights reserved.
