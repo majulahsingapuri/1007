@@ -92,11 +92,14 @@ void printEmp(Employee *emp, int size) {
 int readin(Employee *emp) {
     
     int i = 0;
-    char name[40];
+    char name[40], *p;
     
     while (1) {
         printf("Enter name: \n");
-        scanf(" %s", name);
+        scanf("\n");
+        fgets(name, 80, stdin);
+        if (p=strchr(name,'\n'))
+            *p = '\0';
         
         if (strncmp(name, "#", 1) == 0) {
             return i;
