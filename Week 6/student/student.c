@@ -78,7 +78,8 @@ void inputStud(Student *s, int size) {
         scanf(" %d", &student.id);
         
         printf("Student Name: \n");
-        scanf(" %s", student.name);
+        scanf("\n");
+        fgets(student.name, 80, stdin);
         if (p=strchr(student.name,'\n'))
             *p = '\0';
         
