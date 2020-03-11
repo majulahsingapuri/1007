@@ -18,7 +18,8 @@ int main() {
     printf("Enter %d numbers: \n", size);
     
     for (i=0; i < size; i++)
-        scanf("%d", &ar[i]); max=ar[0];
+        scanf("%d", &ar[i]);
+    max=ar[0];
     rFindMaxAr(ar,size,&max);
     printf("rFindMaxAr(): %d\n", max);
     
@@ -27,14 +28,13 @@ int main() {
      
 void rFindMaxAr(int *ar, int size, int *max) {
     
-    if (size == -1) {
-        *max = ar[size + 1];
+    if (size == 0) {
         return;
     }
     
     rFindMaxAr(ar, size - 1, max);
     
-    if (ar[size] > *max) {
-        *max = ar[size];
+    if (ar[size - 1] > *max) {
+        *max = ar[size - 1];
     }
 }
