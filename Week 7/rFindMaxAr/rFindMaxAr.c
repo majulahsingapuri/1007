@@ -34,7 +34,7 @@ void rFindMaxAr(int *ar, int size, int *max) {
     
     rFindMaxAr(ar, size - 1, max);
     
-    if (ar[size - 1] > *max) {
+    if (ar[size] > *max) {
         *max = ar[size];
     }
 }
