@@ -1,6 +1,6 @@
 //
 //  main.c
-//  oddItemsToBack
+//  alternateMergeLinkedList
 //
 //  Created by Bhargav Singapuri on 29/3/20.
 //  Copyright © 2020 Bhargav Singapuri. All rights reserved.
@@ -21,80 +21,80 @@ typedef struct _linkedlist
     ListNode *head;
 } LinkedList;
 
-void moveOddItemsToBack(LinkedList *ll);
+void alternateMergeLinkedList(LinkedList *ll1, LinkedList *ll2);
 void printList(LinkedList *ll);
 void removeAllItems(LinkedList *ll);
-ListNode * findNode(LinkedList *ll, int index);
+ListNode *findNode(LinkedList *ll, int index);
 int insertNode(LinkedList *ll, int index, int value);
 int removeNode(LinkedList *ll, int index);
 
 int main() {
-    LinkedList ll;
+    LinkedList ll1, ll2;
     int c, i, j;
     c = 1;
     //Initialize the linked list 1 as an empty linked list
-    ll.head = NULL;
-    ll.size = 0;
+    ll1.head = NULL;
+    ll1.size = 0;
 
+    //Initialize the linked list 2 as an empty linked list
+    ll2.head = NULL;
+    ll2.size = 0;
 
-    printf("1: Insert an integer to the linked list:\n");
-    printf("2: Moves all odd integers to the back of the linked list:\n");
+    printf("1: Insert an integer to the linked list 1:\n");
+    printf("2: Insert an integer to the linked list 2:\n");
+    printf("3: Create the alternate merged linked list:\n");
     printf("0: Quit:\n");
 
     while (c != 0) {
-        printf("Please input your choice(1/2/0): ");
+        printf("Please input your choice(1/2/3/0): ");
         scanf("%d", &c);
 
         switch (c) {
             case 1:
-                printf("Input an integer that you want to add to the linked list:   ");
+                printf("Input an integer that you want to add to the linked list 1: ");
                 scanf("%d", &i);
-                j = insertNode(&ll, ll.size, i);
-                printf("The resulting Linked List is: ");
-                printList(&ll);
+                j = insertNode(&ll1, ll1.size, i);
+                printf("Linked list 1: ");
+                printList(&ll1);
                 break;
             case 2:
-                moveOddItemsToBack(&ll);
-                printf("The resulting Linked List after moving odd integers to the  back of the Linked List is: ");
-                printList(&ll);
-                removeAllItems(&ll);
+                printf("Input an integer that you want to add to the linked list 2: ");
+                scanf("%d", &i);
+                j = insertNode(&ll2, ll2.size, i);
+                printf("Linked list 2: ");
+                printList(&ll2);
+                break;
+            case 3:
+                alternateMergeLinkedList(&ll1, &ll2); // You need to code this function
+                printf("Linked list 1: ");
+                printList(&ll1);
+                printf("Linked list 2: ");
+                printList(&ll2);
                 break;
             case 0:
-                removeAllItems(&ll);
+                removeAllItems(&ll1);
+                removeAllItems(&ll2);
                 break;
             default:
                 printf("Choice unknown;\n");
                 break;
-            }
+        }
     }
     return 0;
 }
 
-void moveOddItemsToBack(LinkedList *ll) {
+void alternateMergeLinkedList(LinkedList *ll1, LinkedList *ll2) {
     
-    ListNode *cur, *end;
-    int index = 0;
+    int index = 1;
     
-    if (ll == NULL)
-        return;
-    cur = ll->head;
-    end = findNode(ll, ll->size - 1);
-    
-    while (cur != end) {
-        if (cur->item % 2 == 1) {
-            insertNode(ll, ll->size, cur->item);
-            removeNode(ll, index);
-            index--;
+    while (index <= ll1->size) {
+        if (ll2->head == NULL) {
+            break;
         }
-        cur = cur->next;
-        index++;
+        insertNode(ll1, index, ll2->head->item);
+        removeNode(ll2, 0);
+        index += 2;
     }
-    
-    if (end->item % 2 == 1) {
-        insertNode(ll, ll->size, end->item);
-        removeNode(ll, index);
-    }
-
 }
 
 void printList(LinkedList *ll) {
@@ -126,8 +126,7 @@ void removeAllItems(LinkedList *ll) {
     ll->size = 0;
 }
 
-
-ListNode * findNode(LinkedList *ll, int index) {
+ListNode *findNode(LinkedList *ll, int index) {
 
     ListNode *temp;
 
@@ -190,7 +189,7 @@ int removeNode(LinkedList *ll, int index) {
         return -1;
 
     // If removing first node, need to update head pointer
-    if (index == 0){
+    if (index == 0) {
         cur = ll->head->next;
         free(ll->head);
         ll->head = cur;
@@ -201,7 +200,7 @@ int removeNode(LinkedList *ll, int index) {
 
     // Find the nodes before and after the target position
     // Free the target node and reconnect the links
-    if ((pre = findNode(ll, index - 1)) != NULL){
+    if ((pre = findNode(ll, index - 1)) != NULL) {
 
         if (pre->next == NULL)
             return -1;
