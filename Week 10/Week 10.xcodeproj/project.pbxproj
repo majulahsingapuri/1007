@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		4C394C6424306E6D000AFBFF /* oddItemsToBack.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C394C6324306E6D000AFBFF /* oddItemsToBack.c */; };
+		4C461B942431B06000DDE3AD /* recursiveReverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C461B932431B06000DDE3AD /* recursiveReverse.c */; };
 		4CA8A524243077A900DB872D /* alternateMergeLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8A523243077A900DB872D /* alternateMergeLinkedList.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4C394C5E24306E6D000AFBFF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4C461B8F2431B06000DDE3AD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -35,12 +45,21 @@
 /* Begin PBXFileReference section */
 		4C394C6024306E6D000AFBFF /* oddItemsToBack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oddItemsToBack; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C394C6324306E6D000AFBFF /* oddItemsToBack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = oddItemsToBack.c; sourceTree = "<group>"; };
+		4C461B912431B06000DDE3AD /* recursiveReverse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = recursiveReverse; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C461B932431B06000DDE3AD /* recursiveReverse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = recursiveReverse.c; sourceTree = "<group>"; };
 		4CA8A521243077A900DB872D /* alternateMergeLinkedList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = alternateMergeLinkedList; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA8A523243077A900DB872D /* alternateMergeLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = alternateMergeLinkedList.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4C394C5D24306E6D000AFBFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C461B8E2431B06000DDE3AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,6 +81,7 @@
 			children = (
 				4C394C6224306E6D000AFBFF /* oddItemsToBack */,
 				4CA8A522243077A900DB872D /* alternateMergeLinkedList */,
+				4C461B922431B06000DDE3AD /* recursiveReverse */,
 				4C394C6124306E6D000AFBFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +91,7 @@
 			children = (
 				4C394C6024306E6D000AFBFF /* oddItemsToBack */,
 				4CA8A521243077A900DB872D /* alternateMergeLinkedList */,
+				4C461B912431B06000DDE3AD /* recursiveReverse */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +102,14 @@
 				4C394C6324306E6D000AFBFF /* oddItemsToBack.c */,
 			);
 			path = oddItemsToBack;
+			sourceTree = "<group>";
+		};
+		4C461B922431B06000DDE3AD /* recursiveReverse */ = {
+			isa = PBXGroup;
+			children = (
+				4C461B932431B06000DDE3AD /* recursiveReverse.c */,
+			);
+			path = recursiveReverse;
 			sourceTree = "<group>";
 		};
 		4CA8A522243077A900DB872D /* alternateMergeLinkedList */ = {
@@ -109,6 +138,23 @@
 			name = oddItemsToBack;
 			productName = "Week 10";
 			productReference = 4C394C6024306E6D000AFBFF /* oddItemsToBack */;
+			productType = "com.apple.product-type.tool";
+		};
+		4C461B902431B06000DDE3AD /* recursiveReverse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C461B972431B06000DDE3AD /* Build configuration list for PBXNativeTarget "recursiveReverse" */;
+			buildPhases = (
+				4C461B8D2431B06000DDE3AD /* Sources */,
+				4C461B8E2431B06000DDE3AD /* Frameworks */,
+				4C461B8F2431B06000DDE3AD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = recursiveReverse;
+			productName = recursiveReverse;
+			productReference = 4C461B912431B06000DDE3AD /* recursiveReverse */;
 			productType = "com.apple.product-type.tool";
 		};
 		4CA8A520243077A900DB872D /* alternateMergeLinkedList */ = {
@@ -140,6 +186,9 @@
 					4C394C5F24306E6D000AFBFF = {
 						CreatedOnToolsVersion = 11.4;
 					};
+					4C461B902431B06000DDE3AD = {
+						CreatedOnToolsVersion = 11.4;
+					};
 					4CA8A520243077A900DB872D = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -160,6 +209,7 @@
 			targets = (
 				4C394C5F24306E6D000AFBFF /* oddItemsToBack */,
 				4CA8A520243077A900DB872D /* alternateMergeLinkedList */,
+				4C461B902431B06000DDE3AD /* recursiveReverse */,
 			);
 		};
 /* End PBXProject section */
@@ -170,6 +220,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C394C6424306E6D000AFBFF /* oddItemsToBack.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C461B8D2431B06000DDE3AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C461B942431B06000DDE3AD /* recursiveReverse.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +371,26 @@
 			};
 			name = Release;
 		};
+		4C461B952431B06000DDE3AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6F9359RN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C461B962431B06000DDE3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6F9359RN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		4CA8A526243077A900DB872D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -350,6 +428,15 @@
 			buildConfigurations = (
 				4C394C6824306E6D000AFBFF /* Debug */,
 				4C394C6924306E6D000AFBFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C461B972431B06000DDE3AD /* Build configuration list for PBXNativeTarget "recursiveReverse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C461B952431B06000DDE3AD /* Debug */,
+				4C461B962431B06000DDE3AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
