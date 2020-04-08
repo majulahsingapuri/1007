@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4CA05873243DDFF6005C0A65 /* createQueueFromLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA05872243DDFF6005C0A65 /* createQueueFromLinkedList.c */; };
 		4CF882CA243DE60500F75101 /* reverseStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CF882C9243DE60500F75101 /* reverseStack.c */; };
+		4CF882D5243E0C6B00F75101 /* isStackPairwiseConsecutive.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CF882D4243E0C6B00F75101 /* isStackPairwiseConsecutive.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		4CF882D0243E0C6B00F75101 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +47,8 @@
 		4CA05872243DDFF6005C0A65 /* createQueueFromLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = createQueueFromLinkedList.c; sourceTree = "<group>"; };
 		4CF882C7243DE60500F75101 /* reverseStack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = reverseStack; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF882C9243DE60500F75101 /* reverseStack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reverseStack.c; sourceTree = "<group>"; };
+		4CF882D2243E0C6B00F75101 /* isStackPairwiseConsecutive */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = isStackPairwiseConsecutive; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CF882D4243E0C6B00F75101 /* isStackPairwiseConsecutive.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = isStackPairwiseConsecutive.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CF882CF243E0C6B00F75101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +81,7 @@
 			children = (
 				4CA05871243DDFF6005C0A65 /* createQueueFromLinkedList */,
 				4CF882C8243DE60500F75101 /* reverseStack */,
+				4CF882D3243E0C6B00F75101 /* isStackPairwiseConsecutive */,
 				4CA05870243DDFF6005C0A65 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +91,7 @@
 			children = (
 				4CA0586F243DDFF6005C0A65 /* createQueueFromLinkedList */,
 				4CF882C7243DE60500F75101 /* reverseStack */,
+				4CF882D2243E0C6B00F75101 /* isStackPairwiseConsecutive */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +110,14 @@
 				4CF882C9243DE60500F75101 /* reverseStack.c */,
 			);
 			path = reverseStack;
+			sourceTree = "<group>";
+		};
+		4CF882D3243E0C6B00F75101 /* isStackPairwiseConsecutive */ = {
+			isa = PBXGroup;
+			children = (
+				4CF882D4243E0C6B00F75101 /* isStackPairwiseConsecutive.c */,
+			);
+			path = isStackPairwiseConsecutive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +157,23 @@
 			productReference = 4CF882C7243DE60500F75101 /* reverseStack */;
 			productType = "com.apple.product-type.tool";
 		};
+		4CF882D1243E0C6B00F75101 /* isStackPairwiseConsecutive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CF882D6243E0C6B00F75101 /* Build configuration list for PBXNativeTarget "isStackPairwiseConsecutive" */;
+			buildPhases = (
+				4CF882CE243E0C6B00F75101 /* Sources */,
+				4CF882CF243E0C6B00F75101 /* Frameworks */,
+				4CF882D0243E0C6B00F75101 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = isStackPairwiseConsecutive;
+			productName = isStackPairwiseConsecutive;
+			productReference = 4CF882D2243E0C6B00F75101 /* isStackPairwiseConsecutive */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +187,9 @@
 						CreatedOnToolsVersion = 11.4;
 					};
 					4CF882C6243DE60500F75101 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					4CF882D1243E0C6B00F75101 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
@@ -160,6 +209,7 @@
 			targets = (
 				4CA0586E243DDFF6005C0A65 /* createQueueFromLinkedList */,
 				4CF882C6243DE60500F75101 /* reverseStack */,
+				4CF882D1243E0C6B00F75101 /* isStackPairwiseConsecutive */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +228,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF882CA243DE60500F75101 /* reverseStack.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CF882CE243E0C6B00F75101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF882D5243E0C6B00F75101 /* isStackPairwiseConsecutive.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +391,26 @@
 			};
 			name = Release;
 		};
+		4CF882D7243E0C6B00F75101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6F9359RN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4CF882D8243E0C6B00F75101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6F9359RN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -359,6 +437,15 @@
 			buildConfigurations = (
 				4CF882CB243DE60500F75101 /* Debug */,
 				4CF882CC243DE60500F75101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CF882D6243E0C6B00F75101 /* Build configuration list for PBXNativeTarget "isStackPairwiseConsecutive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CF882D7243E0C6B00F75101 /* Debug */,
+				4CF882D8243E0C6B00F75101 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
