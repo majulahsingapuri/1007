@@ -118,6 +118,10 @@ int main()
 
 Queue  popToQueue(Queue *q, Stack *s, int value) {
     
+    Queue secondQ;
+    secondQ.ll.head = NULL;
+    secondQ.ll.size = 0;
+    
     if (!isEmptyQueue(q) || !isEmptyStack(s)) {
         int size = q->ll.size, item;
         
@@ -125,13 +129,13 @@ Queue  popToQueue(Queue *q, Stack *s, int value) {
             item = dequeue(q);
             if (item == value) {
                 while (s->ll.size != 0) {
-                    enqueue(q, pop(s));
+                    enqueue(&secondQ, pop(s));
                 }
             }
-            enqueue(q, item);
+            enqueue(&secondQ, item);
         }
     }
-    return *q;
+    return secondQ;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
